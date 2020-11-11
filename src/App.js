@@ -6,6 +6,7 @@ import SpotifyWebApi from "spotify-web-api-js";
 import { getTokenFromURL } from "./spotify";
 import Player from "./Player";
 import { useDataLayerValue } from "./DataLayer";
+import { AccordionActions } from "@material-ui/core";
 
 const spotify = new SpotifyWebApi();
 
@@ -37,6 +38,13 @@ function App() {
       dispatch({
         type: "SET_PLAYLISTS",
         playlists: playlists,
+      });
+    });
+
+    spotify.getPlaylist("37i9dQZF1E37XQIrbO4wGO").then((response) => {
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response,
       });
     });
   }, []);

@@ -14,8 +14,8 @@ function Header() {
         <input placeholder="Search for artists,songs" type="text" />
       </div>
       <div className="header__right">
-        <Avatar src="" alt="SD" />
-        <h4>Shubham Dalal</h4>
+        <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
+        <h4>{user?.display_name}</h4>
       </div>
     </div>
   );
