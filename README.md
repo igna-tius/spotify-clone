@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+Deployed:https://spotify-clone-c538a.web.app/
+
+It is a clone website of spotify.
+Displays playlist,artitist,songs.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
